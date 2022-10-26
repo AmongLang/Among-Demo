@@ -1,5 +1,12 @@
 package ttmp.amongdemo
 
+import among.*
+import among.macro.Macro
+import among.macro.MacroDefinition
+import among.macro.MacroParameterList
+import among.macro.MacroType
+import among.obj.Among
+import among.operator.OperatorDefinition
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -13,13 +20,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import ttmp.among.AmongEngine
-import ttmp.among.compile.CompileResult
-import ttmp.among.compile.ReportType
-import ttmp.among.compile.Source
-import ttmp.among.definition.*
-import ttmp.among.obj.Among
-import ttmp.among.util.LnCol
 import kotlin.time.ExperimentalTime
 import kotlin.time.measureTime
 
@@ -230,7 +230,7 @@ fun amongToCards(sourceString: String): List<Card> {
         for (operator in res.definition().operators().allOperators()) {
             list += Card.OperatorCard(operator)
         }
-        for (o in res.root().objects()) {
+        for (o in res.root().values()) {
             if (o.isPrimitive && o.asPrimitive().value.contains("when the imposter is sus", ignoreCase = true))
                 list += Card.SusCard
             else list += Card.AmongCard(o)

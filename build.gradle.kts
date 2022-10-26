@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.compose") version "1.1.0"
 }
 
-group = "ttmp"
+group = "io.github.amonglang"
 version = "0.1.0"
 
 repositories {
@@ -19,7 +19,7 @@ repositories {
 dependencies {
     implementation(compose.desktop.currentOs)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    implementation(files("libs/among-0.3.1.jar"))
+    implementation("io.github.amonglang:among:0.4.0")
 }
 
 tasks.withType<KotlinCompile>() {
