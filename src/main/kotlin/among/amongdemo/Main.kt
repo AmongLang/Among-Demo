@@ -1,4 +1,4 @@
-package ttmp.amongdemo
+package among.amongdemo
 
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.*

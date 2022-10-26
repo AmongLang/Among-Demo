@@ -1,4 +1,4 @@
-package ttmp.amongdemo
+package among.amongdemo
 
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth

@@ -1,4 +1,4 @@
-package ttmp.amongdemo
+package among.amongdemo
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateListOf
