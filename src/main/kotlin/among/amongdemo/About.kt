@@ -44,8 +44,8 @@ fun About() {
         ) {
             val desktop = if (Desktop.isDesktopSupported()) Desktop.getDesktop() else null
             if (desktop != null && desktop.isSupported(Desktop.Action.BROWSE)) {
-                Hyperlink(URI.create("https://github.com/TTMP-Modding-Team/Among"), "Among GitHub")
-                Hyperlink(URI.create("https://github.com/TTMP-Modding-Team/Among-Demo"), "Among Demo GitHub")
+                Hyperlink(URI.create("https://github.com/AmongLang/Among"), "Among GitHub")
+                Hyperlink(URI.create("https://github.com/AmongLang/Among-Demo"), "Among Demo GitHub")
             }
         }
     }
